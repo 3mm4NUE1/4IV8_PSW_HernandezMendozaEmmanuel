@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../imagenes/fondo.png);
+}
+
+.cont_gen{
+    margin: auto;
+    margin-top: 3%;
+    width: 740px;
+    height: 1010px;
+    background-color: #B9D6F2;
+    border: 10px solid #B9D6F2;
+    border-radius: 10px;
+}
+
+.info{
+    float: right;
+    width: 450px;
+    height: 800px;
+    padding: 1rem;
+    padding-left: 2rem;
+    margin-top: 3%;
+    margin-right: 3%;
+    background-color: #006DAA;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+}
+
+.info ul{
+    margin-left: 4%;
+}
+
+.otro{
+    width: 190px;
+    height: 832px;
+    margin-top: 3%;
+    margin-left: 3%;
+    background-color: #003559;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-indent: 10%;
+}
+
+.foto{
+    margin: auto;
+    margin-top: 0%;
+    padding: 1rem;
+    width: 130px;
+    height: 130px;
+    border: 5px solid #ffffff;
+    border-radius: 90px;
+    background-image: url(../imagenes/Foto.jpeg);
+    background-size: 155px 155px;
+    background-position: 100%;
+    background-position-x: 5px;
+}
+
+.abajo{
+    margin: auto;
+    margin-top: 1%;
+    width: 700px;
+    height: 130px;
+    background-color: #006DAA;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-indent: 3%;
+}
+
+.poli_1{
+    margin: auto;
+    margin-top: 7%;
+    width: 180px;
+    height: 200px;
+    border: 5px solid #003559;
+    background-image: url(../imagenes/Logo_poli.png);
+    background-size: 300px 190px;
+    background-position: 100%;
+    background-position-x: -60px;
+}
+
+.cecyt{
+    margin: auto;
+    margin-top: 7%;
+    width: 180px;
+    height: 190px;
+    border: 5px solid #003559;
+    background-image: url(../imagenes/escudoCECyT9.png);
+    background-size: 190px 190px;
+    background-position: 100%;
+    background-position-x:-4px;
+}
