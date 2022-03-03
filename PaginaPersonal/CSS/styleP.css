@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(../imagenes/fondoGen.jpg);
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    background-color: #000000;
+    width: 100%;
+    clear: both;
+    content:'';
+    display: table;
+}
+
+.menu{
+    margin: auto;
+    width: 100%;
+    font-size: x-large;
+}
+
+.menu img{
+    max-width: 18%;
+    margin-left: 6%;
+    float: left;
+    padding: 1rem;
+}
+
+nav{
+    float: right;
+    margin-right: 10%;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 25px;
+    padding: 4rem 1rem;
+    padding-right: 1rem;
+    float: left;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+section{
+    margin: auto;
+    margin-top: 1s;
+    margin-bottom: 1%;  
+    width: 90%;
+    max-width: 80%;
+    max-height: 85%;
+    border-radius: 10px;
+}
+
+.info{
+    float: left;
+    margin: auto;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    max-width: 65%;
+    max-height: 90%;
+    padding: 1rem;
+    padding-right: 2rem;
+    text-align: justify;
+    font-size: x-large;
+    background-color: #C6AC8F;
+}
+
+.info img{
+    margin: auto;
+    max-width: 70%;
+    display: block;
+}
+
+iframe{
+    margin: 5% auto;
+    max-width: 80%;
+    display: block;
+}
+
+.der{
+    float: right;
+    margin: auto;
+    margin-top: 2%;
+    margin-right: 2%;
+    max-width: 28%;
+    padding: 1rem;
+    font-size: xx-large;
+    background-color: #C6AC8F;
+}
+
+.der img{
+    max-width: 95%;
+}
+
+.info ul{
+    margin-left: 4%;
+}
+
+footer{
+    background-color: #000000;
+    width: 100%;
+    max-height: 5%;
+    clear: both;
+    content:'';
+    display: table;
+}
+
+.contacto{
+    padding: 1rem;
+    font-size: x-large;
+    font: #ffff;
+}
+
+.contacto nav ul li{
+    padding: 4rem 2rem;
+    padding-left: 1rem;
+}
+
+.contacto img{
+    max-width: 10%;
+    margin-left: 6%;
+}
+
+.Producto{
+    width: 83%;
+    height: 100%;
+}
+
+.infoProducto{
+    max-width: 100%;
+    margin-top: 3%;
+    padding: 2rem;
+    padding-bottom: 8rem;
+    font-size: x-large;
+    background-color: #C6AC8F;
+}
+
+.infoProducto img{
+    max-width: 10%;
+    float: left;
+}
+
+.nosotros{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.infoNosotros{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 4rem;
+    font-size: x-large;
+    background-color: #C6AC8F;
+    text-align: justify;
+}
+
+.infoQH{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 4rem;
+    font-size: x-large;
+    background-color: #C6AC8F;
+    text-align: justify;
+}
+
+.infoQH img{
+    max-width: 70%;
+    margin: auto;
+    display: block;
+}
+
+.infoP{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 4rem;
+    font-size: x-large;
+    background-color: #C6AC8F;
+    text-align: justify;
+}
+
+.link{
+    text-align: center;
+}

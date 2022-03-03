@@ -1,0 +1,35 @@
+from tkinter import *
+from tkinter import Tk
+
+window=Tk()
+
+window.title("Mi ventana")
+
+window.geometry("600x600")
+
+window.config (bg="beige")
+
+frame=Frame()
+
+frame.pack()
+
+frame.config(width="400", height="400")
+
+frame.config(bg="red")
+
+frame.config(bd=35)
+
+frame.config(relief='groove')
+
+frame.config(cursor='pirate')
+
+
+labell=Label(frame,text="Hola alumnos",fg="blue",font=("Comic Sans MS",10))
+labell.place(x=100,y=100)
+
+#miimagen=PhotoImage(file="gato.png")
+
+
+#label=Label(frame,image=miimagen).place(x=10,y=30)
+
+window.mainloop()
