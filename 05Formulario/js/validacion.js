@@ -70,7 +70,7 @@ function validar(formulario){
     }
 
     if(allValido){
-        alert("Escriba unicamente letras en el campo de nombre");
+        alert("Escriba unicamente numeros en el campo de nombre");
         formulario.nombre.focus();
         return false;
     }

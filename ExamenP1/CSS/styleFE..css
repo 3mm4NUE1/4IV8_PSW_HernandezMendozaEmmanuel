@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.forms{
+    margin: auto;
+}
+
+.formulario{
+    margin: auto;
+    background-color: rgb(151, 151, 151);
+    padding-bottom: 2rem;
+    margin-top: 3%;
+    width: 40%;
+    display: block;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tabla{
+    margin: auto;
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+footer{
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: gray;
+    text-align: center;
+}
+
+header{
+    background-color: grey;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+    text-align: center;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th, td {
+    padding: 20px;
+  }

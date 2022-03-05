@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="../ExamenP1/CSS/styleFE..css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Una tabla de Amortizacion</h1>
+    </header>
+    <div class="forms">
+        <div class="formulario">
+            <form method="get" name="form" action="">
+            <br>
+            <p>
+                <label>Valor del Automovil: </label>
+                <input type="number" name="valor" id="valor">
+                <br><br>
+                <label>Cuota inicial: </label>
+                <input type="text" name="cuota" id="cuota">
+                <br><br>
+                <label>Periodo</label>
+                <select name="periodo" id="periodo">
+                    <option value="3 meses">3 meses</option>
+                    <option value="6 neses">6 meses</option>
+                    <option value="9 meses">9 meses</option>
+                    <option value="4 meses">12 meses</option>
+                    <option value="5 meses">18 meses</option>
+                </select>
+            </p>
+            <br>
+            <input class="bot1" type="submit" name="enviar un valor" value="Enviar Datos">
+            <br>
+            <input class="bot2" type="reset" name="borrar" value="Borrar datos">
+            </form>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="tabla">
+            <table border="2" id="TablaA" name="table">
+                <caption>Tabla de Amortizacion</caption>
+                <thead>
+                    <tr>
+                        <th>Capital</th>
+                        <th>Periodo</th>
+                        <th>Interes</th>
+                        <th>Amortizacion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3.94%</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <h1>Nombre del Alumno</h1>
+        <p>
+            Emmanuel Hernandez Mendoza <br>
+            Boleta: 2021090655 <br>
+            Grupo: 4IV8
+        </p>
+    </footer>
+    <script>
+
+        const form =document.getElementById("form")
+
+        form.addEventListener("submit", function(event){
+            event.preventDefault();
+            let datos=new FormData(form);
+            let tablaRef=document.getElementById("tablaA");
+            let nuevaFT=tablaRef.insertRow(-1);
+
+            let nuevaCT=nuevaFT.insertCell(0);
+            nuevaCT.textcontent="wola"
+            let nuevaCT=nuevaFT.insertCell(1);
+            nuevaCT.textcontent="wola"
+            let nuevaCT=nuevaFT.insertCell(2);
+            nuevaCT.textcontent="wola"
+            let nuevaCT=nuevaFT.insertCell(3);
+            nuevaCT.textcontent="wola"
+        })
+        
+    </script>
+</body>
+</html>
