@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../EjerciciosJS/CSS/Style.css">
+    <script src="../EjerciciosJS/JavaScript/ejerciciosJs.js"></script>
+</head>
+<body>
+    <div class="general">
+        <div class="ejercicio1">
+            <form action="" name="form1">
+                <label for="">Ejercicio 1</label>
+                <br>
+                <table class="ex1">
+                    <caption>Ingresa una cantidad para invertirla a razón de 2%</caption>
+                    <tr>
+                        <td>Ingresa una cantidad: </td>
+                        <td></td>
+                        <td><input type="text" name="Dinero" id="Dinero"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="Aceptar" id="AceptarInfo" value="Aceptar" onclick="ex1()"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>El total es: </td>
+                        <td></td>
+                        <td><input type="text" name="Total" id="TotalF"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="Borrar" id="BorrarInfo" value="Borrar" onclick="borrar1()"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="ejercicio2">
+            <form action="" name="form2">
+                <label for="">Ejercicio 2</label>
+                <br>
+                <table class="ex2">
+                    <caption>Ingresa la cantidad para calcular las comisiones de 10% y el total</caption>
+                    <tr>
+                        <td>Ingresa una cantidad: </td>
+                        <td></td>
+                        <td><input type="text" name="sueldo" id="Dinero"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="Aceptar" id="AceptarInfo" value="Aceptar" onclick="ex2()"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>El total de las comisiones es: </td>
+                        <td></td>
+                        <td><input type="text" name="Comisiones"></td>
+                    </tr>
+                    <tr>
+                        <td>El total es: </td>
+                        <td></td>
+                        <td><input type="text" name="total2" id="TotalF"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="Borrar2" id="BorrarInfo" value="Borrar" onclick="borrar2()"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="ejercicio3">
+            <form action="" name="form3">
+                <label for="">Ejercicio 3</label>
+                <br>
+                <table class="ex3">
+                    <caption>Ingresa la cantidad para calcular un descuento del 15%</caption>
+                    <tr>
+                        <td>Ingresa una cantidad: </td>
+                        <td></td>
+                        <td><input type="text" name="pago" id="Dinero"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="Aceptar" id="AceptarInfo" value="Aceptar" onclick="ex3()"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>El total es: </td>
+                        <td></td>
+                        <td><input type="text" name="total3" id="TotalF"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="Borrar3" id="BorrarInfo" value="Borrar" onclick="borrar3()"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="ejercicio4">
+            <form action="" name="form4">
+                <label for="">Ejercicio 4</label>
+                <br>
+                <table class="ex4">
+                    <caption>Ingresa tus calificaciones para sacar tu promedio final</caption>
+                    <tr>
+                        <td>Ingresa la calificación del 1° parcial: </td>
+                        <td></td>
+                        <td><input type="text" name="parcial1" id="p1"></td>
+                    </tr>
+                    <tr>
+                        <td>Ingresa la calificación del 2° parcial: </td>
+                        <td></td>
+                        <td><input type="text" name="parcial2" id="p2"></td>
+                    </tr>
+                    <tr>
+                        <td>Ingresa la calificación del 3° parcial: </td>
+                        <td></td>
+                        <td><input type="text" name="parcial3" id="p3"></td>
+                    </tr>
+                    <tr>
+                        <td>Ingresa la calificación del exámen: </td>
+                        <td></td>
+                        <td><input type="text" name="examen" id="exa"></td>
+                    </tr>
+                    <tr>
+                        <td>Ingresa la calificación del trabajo final: </td>
+                        <td></td>
+                        <td><input type="text" name="trabajof" id="tf"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="Aceptar" id="AceptarInfo" value="Aceptar" onclick="ex4()"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>El total es: </td>
+                        <td></td>
+                        <td><input type="text" name="final" id="TotalF"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="Borrar3" id="BorrarInfo" value="Borrar" onclick="borrar4()"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="ejercicio5">
+            <form action="" name="form5">
+                <label for="">Ejercicio 5</label>
+                <br>
+                <table class="ex5">
+                    <caption>Ingresa cantidad de mujeres y hombres para calcular el procentaje de cada uno</caption>
+                    <tr>
+                        <td>Ingresa el total de mujeres: </td>
+                        <td></td>
+                        <td><input type="text" name="totalM" id="totalM"></td>
+                    </tr>
+                    <tr>
+                        <td>Ingresa el total de hombres: </td>
+                        <td></td>
+                        <td><input type="text" name="totalH" id="totalH"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="Aceptar" id="AceptarInfo" value="Aceptar" onclick="ex5()"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Porcentaje de mujeres: </td>
+                        <td></td>
+                        <td><input type="text" name="pmujeres" id="TotalF"></td>
+                    </tr>
+                    <tr>
+                        <td>Porcentaje de hombres: </td>
+                        <td></td>
+                        <td><input type="text" name="phombres" id="TotalM"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="Borrar3" id="BorrarInfo" value="Borrar" onclick="borrar5()"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="ejercicio6 ">
+            <form action="" name="form6">
+                <label for="">Ejercicio 6</label>
+                <br>
+                <table class="ex">
+                    <caption>Ingresa la siguiente información para calcular tu edad</caption>
+                    <tr>
+                        <td>Ingresa la fecha actual (día/mes/año) </td>
+                        <td></td>
+                        <td><input type="text" name="dia"></td>
+                        <td><input type="text" name="mes"></td>
+                        <td><input type="text" name="añoC" id="totalA"></td>
+                    </tr>
+                    <tr>
+                        <td>Ingresa tu fecha de nacimiento (día/mes/año) </td>
+                        <td></td>
+                        <td><input type="text" name="diaN"></td>
+                        <td><input type="text" name="mesN"></td>
+                        <td><input type="text" name="añoN" id="totalM"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="Aceptar" id="AceptarInfo" value="Aceptar" onclick="ex6()"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Edad: </td>
+                        <td></td>
+                        <td><input type="text" name="edad" id="TotalF"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="Borrar3" id="BorrarInfo" value="Borrar" onclick="borrar6()"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
