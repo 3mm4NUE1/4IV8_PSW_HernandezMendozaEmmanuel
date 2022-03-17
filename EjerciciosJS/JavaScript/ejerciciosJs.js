@@ -1,3 +1,4 @@
+
 function ex1(){
     var validar = /^[0-9]+$/
 
@@ -29,17 +30,23 @@ function ex2(){
 
     var cant = document.form2.sueldo.value;
     var cap = parseInt(cant);
+    var vc1 = document.form2.c1.value
+    var c1 = parseInt(vc1)
+    var vc2 = document.form2.c2.value
+    var c2 = parseInt(vc2)
+    var vc3 = document.form2.c3.value
+    var c3 = parseInt(vc3)
 
-    if(document.form2.sueldo.value == ""){
+    if(document.form2.sueldo.value == "" || vc1 == "" || vc2 == ""){
         alert("Debes llenar todos los campos");
     }
     else if(cap<0){
         alert("Cantidad Invalida")
     }
     else if(cant.match(validar)){
-        var resul = cap*0.1;
-        var total = cap*1.1;
-        document.form2.Comisiones.value = "$" + resul;
+        var com = (c1+c2+c3)*0.1
+        var total = cap+com
+        document.form2.Comisiones.value = "$" + com;
         document.form2.total2.value = "$" + total;
     }
     else{
@@ -51,6 +58,9 @@ function borrar2(){
     document.form2.sueldo.value = "";
     document.form2.Comisiones.value = "";
     document.form2.total2.value = "";
+    document.form2.c1.value = "";
+    document.form2.c2.value = "";
+    document.form2.c3.value = "";
 }
 
 function ex3(){
@@ -98,7 +108,7 @@ function ex4(){
     document.form4.examen.value==""||document.form4.trabajof.value==""){
         alert("Debes llenar todos los campos");
     }
-    else if(p1<0 || p2<0 || p3<0 || exam <0 || tf<0){
+    else if(p1<0 || p2<0 || p3<0 || exam <0 || tf<0 || p1>10 || p2>10 || p3>10 || exam>10 || tf>10){
         alert("Cantidad invalida");
     }
     else if(vp1.match(validar) && vp2.match(validar) && vp3.match(validar) && vex.match(validar) && 
@@ -181,6 +191,9 @@ function ex6(){
     else if(diaA<0 || mesA<0 || añoA<0 || diaN<0 || mesN<0 || añoN<0){
         alert("Dato invalido");
     }
+    else if(añoN>añoA){
+        alert("Año invalido")
+    }
     else if(vdiaA.match(validar) && vmesA.match(validar) && vañoA.match(validar) && 
     vdiaN.match(validar) && vmesN.match(validar) && vañoN.match(validar)){
         if(diaA>31 || diaN>31){
@@ -189,12 +202,19 @@ function ex6(){
         else if(mesA>12 || mesN>12){
             alert("Mes invalido");
         }
-        else{
-            var añoE = añoA - añosN;
-            var mesE = mesA - mesN;
-            var diaE = diaA - diaN;
-
-            document.form6.edad.value = "Tienes "+añoE+" año(s) "+mesE+" mes(es) y "+diaE+" día(s)";
+        else{    
+            if(mesA==mesN && diaA<diaN){
+                var añoR = (añoA-añoN)-1
+                document.form6.edad.value = "Tienes "+añoR+" año(s) ";
+            }
+            else if(mesA<mesN){
+                var añoR = (añoA-añoN)-1
+                document.form6.edad.value = "Tienes "+añoR+" año(s) ";
+            }
+            else{
+                var añoE = añoA - añoN;
+                document.form6.edad.value = "Tienes "+añoE+" año(s) ";
+            }
         }
     }
     else{
